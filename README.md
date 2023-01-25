@@ -1,1 +1,1 @@
-# library
+In this project, I practice manipulating objects with Javascript by creating an app that holds book information.

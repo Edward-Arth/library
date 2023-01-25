@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <table id="books">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th scope="col">Author</th>
+                <th scope="col">Pages</th>
+                <th scope="col">Read</th>
+            </tr>
+        </thead>
+    </table>
+    <button id="newBook" onclick="openForm()">ADD BOOK</button>
+    <div id="bookForm">
+        <form action="/action_page.php" id="formContainer">
+            <h1>Book Details</h1>
+
+            <label for="title" class="labelz"><b>Title</b></label>
+            <input type="text" name="title" class="inputz" id="titleID" maxlength="50" required>
+
+            <label for="author" class="labelz"><b>Author</b></label>
+            <input type="text" name="author" class="inputz" id="authorID" maxlength="50" required>
+
+            <label for="pages" class="labelz"><b>Number of pages</b></label>
+            <input type="number" name="pages" class="inputz" id="pagesID" max="100000" required>
+
+            <label for="read" class="labelz"><b>Have you read it?</b></label>
+            <input type="text" id="readID" class="inputz" name="read" maxlength="3">
+
+            <button type="submit" class="btnCancel" id="subBtn">Add</button>
+            <button type="button" class="btnCancel" id="cBtn" onclick="closeForm()">Cancel</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
